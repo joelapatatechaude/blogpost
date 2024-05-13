@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: blogpost
+  name: blog
 components:
   - name: nodejs
     container:
@@ -26,7 +26,7 @@ commands:
     exec:
       label: "Install"
       component: nodejs
-      workingDir: ${PROJECTS_ROOT}/blogpost
+      workingDir: ${PROJECTS_ROOT}/blog
       commandLine: "npm install"
       group:
         kind: run
@@ -34,7 +34,7 @@ commands:
     exec:
       label: "Run with auto-refresh"
       component: nodejs
-      workingDir: ${PROJECTS_ROOT}/blogpost
+      workingDir: ${PROJECTS_ROOT}/blog
       commandLine: "npm run-script start"
       group:
         kind: run
